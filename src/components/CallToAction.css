@@ -1,0 +1,120 @@
+.cta {
+  background: linear-gradient(135deg, #0175fd 0%, #0160d1 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 5%;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 80px auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(1, 117, 253, 0.3);
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.cta-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre icono y texto */
+}
+
+.cta-container p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-button {
+  padding: 18px 40px; /* Botones más grandes */
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid transparent;
+}
+
+.whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #1da851 100%);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.call {
+  background: linear-gradient(135deg, #ff3b30 0%, #d32f2f 100%);
+  box-shadow: 0 4px 15px rgba(255, 59, 48, 0.3);
+}
+
+.call:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+}
+
+@media (max-width: 768px) {
+  .cta {
+    margin: 60px auto;
+    border-radius: 15px;
+  }
+
+  .cta-container h2 {
+    font-size: 1.8rem; /* Tamaño ajustado para móviles */
+  }
+
+  .cta-container p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Apila los botones en móviles */
+    gap: 15px;
+  }
+
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+}
+
+/* CallToAction - Iconos específicos */
+.cta .cta-icon {
+  font-size: 1.6rem !important; /* Tamaño ajustado para iconos */
+  vertical-align: middle;
+}
